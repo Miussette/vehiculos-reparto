@@ -2,7 +2,7 @@
 
 ### Ejemplo de Propuesta de división del trabajo
 
-### Integrante 1
+### Miussette Alfaro
 
 - Clase `Vehiculo`
 - Encapsulación
