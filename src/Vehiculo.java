@@ -6,7 +6,7 @@ public class Vehiculo {
     private double capacidadCarga;
     private boolean disponible;
 
-    // Constructor
+    // Constructor: Usado por super() en las clases hijas
     public Vehiculo(String patente, String marca, String modelo, double capacidadCarga) {
         setPatente(patente);
         setMarca(marca);
@@ -15,11 +15,9 @@ public class Vehiculo {
         this.disponible = true;
     }
 
-    // GETTERS Y SETTERS (ENCAPSULACIÓN)
+    // --- GETTERS Y SETTERS (Encapsulamiento) ---
 
-    public String getPatente() {
-        return patente;
-    }
+    public String getPatente() { return patente; }
 
     public void setPatente(String patente) {
         if (patente == null || patente.trim().isEmpty()) {
@@ -28,9 +26,7 @@ public class Vehiculo {
         this.patente = patente;
     }
 
-    public String getMarca() {
-        return marca;
-    }
+    public String getMarca() { return marca; }
 
     public void setMarca(String marca) {
         if (marca == null || marca.trim().isEmpty()) {
@@ -39,17 +35,10 @@ public class Vehiculo {
         this.marca = marca;
     }
 
-    public String getModelo() {
-        return modelo;
-    }
+    public String getModelo() { return modelo; }
+    public void setModelo(String modelo) { this.modelo = modelo; }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
-    public double getCapacidadCarga() {
-        return capacidadCarga;
-    }
+    public double getCapacidadCarga() { return capacidadCarga; }
 
     public void setCapacidadCarga(double capacidadCarga) {
         if (capacidadCarga < 0) {
@@ -58,20 +47,15 @@ public class Vehiculo {
         this.capacidadCarga = capacidadCarga;
     }
 
-    public boolean isDisponible() {
-        return disponible;
-    }
+    public boolean isDisponible() { return disponible; }
+    public void setDisponible(boolean disponible) { this.disponible = disponible; }
 
-    public void setDisponible(boolean disponible) {
-        this.disponible = disponible;
-    }
-
-    // METODO POLIMÓRFICO
+    // MÉTODO POLIMÓRFICO
     public void mostrarDetalle() {
-        System.out.println("Patente: " + patente +
+        System.out.print("Patente: " + patente +
                 " | Marca: " + marca +
                 " | Modelo: " + modelo +
-                " | Carga: " + capacidadCarga +
-                " | Disponible: " + disponible);
+                " | Carga: " + capacidadCarga + " Ton" +
+                " | Disponible: " + (disponible ? "SÍ" : "EN REPARTO") + " | ");
     }
 }
