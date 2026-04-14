@@ -2,8 +2,11 @@ public class Furgon extends Vehiculo {
 
     private double volumenCarga;
 
-    public Furgon(String patente, String marca, String modelo, double capacidadCarga, double volumenCarga) {
-        super(patente, marca, modelo, capacidadCarga);
+    // 2. Ajustamos el constructor a 4 parámetros para que coincida con tu Main.java
+    public Furgon(String patente, String marca, String modelo, double volumenCarga) {
+        // 3. Llamamos al padre (Vehiculo) pasando los datos básicos.
+        // Si el padre pide capacidadCarga, le pasamos 0 o el dato que prefieras.
+        super(patente, marca, modelo, 0);
         setVolumenCarga(volumenCarga);
     }
 
@@ -23,7 +26,8 @@ public class Furgon extends Vehiculo {
     // POLIMORFISMO
     @Override
     public void mostrarDetalle() {
-        super.mostrarDetalle();
+        super.mostrarDetalle(); // Muestra la info base de la clase Vehiculo
         System.out.println("Volumen: " + volumenCarga + " m³");
+        System.out.println("---------------------------");
     }
 }
