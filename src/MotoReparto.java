@@ -1,6 +1,4 @@
-package modelo;
-
-public class Motoreparto extends Vehiculo {
+public class MotoReparto extends Vehiculo {
 
     private boolean cajaTermica;
 
@@ -26,3 +24,4 @@ public class Motoreparto extends Vehiculo {
         System.out.println("Caja térmica: " + (cajaTermica ? "Sí" : "No"));
     }
 }
+
