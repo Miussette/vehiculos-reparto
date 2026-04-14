@@ -8,25 +8,25 @@
 - Encapsulación
 - Getters, setters y validaciones base
 
-### Integrante 2
+### Fernando Cuevas
 
 - Clase `Camion`
 - Herencia
 - Sobrescritura de métodos
 
-### Integrante 3
+### Monserrat Miranda
 
 - Clase `Furgon`
 - Herencia
 - Sobrescritura de métodos
 
-### Integrante 4
+### Zuelem Chañillao
 
 - Clase `MotoReparto`
 - Herencia
 - Sobrescritura de métodos
 
-### Integrante 5
+### Matias Flores, Alonso Morales
 
 - Clase `Main`
 - Menú
